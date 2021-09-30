@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grocerio">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_grocerio"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_grocerio_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name="com.example.grocerio.RecipeList"
+            android:parentActivityName="com.example.grocerio.Recipes" />
+        <activity
+            android:name="com.example.grocerio.Statistics"
+            android:label="Statistics"
+            android:parentActivityName="com.example.grocerio.MainActivity" />
+        <!--<activity
+            android:name=".recipeslist.LavaCake"
+            android:label="Lava Cake"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.CremeBrulee"
+            android:label="Creme Brulee"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.ChocolateCake"
+            android:label="Chocolate Cake"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.SesameSalad"
+            android:label="Sesame Salad"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.Lasagna"
+            android:label="Lasagna"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.Bolognese"
+            android:label="Bolognese"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.StuffedPeppers"
+            android:label="Stuffed Peppers"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.ShepherdsPie"
+            android:label="Shepherds Pie"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.Salmon"
+            android:label="Salmon"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.KungPaoChicken"
+            android:label="Kung Pao Chicken"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.Goulash"
+            android:label="Goulash"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.ChickenRice"
+            android:label="Chicken and Rice"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.Pancakes"
+            android:label="@string/Pancakes"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.Omelette"
+            android:label="@string/Omelette"
+            android:parentActivityName=".Recipes" />
+        <activity
+            android:name=".recipeslist.EggsBenedict"
+            android:label="@string/EggsBenedict"
+            android:parentActivityName=".Recipes" />-->
+        <activity
+            android:name="com.example.grocerio.Recipes"
+            android:label="Recipes"
+            android:parentActivityName="com.example.grocerio.MainActivity" />
+        <activity
+            android:name="com.example.grocerio.OpenList"
+            android:label="List Content"
+            android:parentActivityName="com.example.grocerio.OpenList" />
+        <activity
+            android:name="com.example.grocerio.MyLists"
+            android:label="My Lists"
+            android:parentActivityName="com.example.grocerio.MainActivity" />
+        <activity
+            android:name="com.example.grocerio.ExtendList"
+            android:label="Extend List"
+            android:parentActivityName="com.example.grocerio.CreateNewList"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.grocerio.CreateNewList"
+            android:label="Create New List"
+            android:parentActivityName="com.example.grocerio.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.example.grocerio.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

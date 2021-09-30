@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9E01579B"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopButtonLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/MainButton1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/MainButton2"
+            app:layout_constraintVertical_weight="1"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/MainButton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@+id/MainButton1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="1"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/HelperMainButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MainButton1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton1"
+            app:layout_constraintEnd_toStartOf="@id/HelperMainButton2"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="1"
+            style="@style/helper_button_properties"
+            android:background="@drawable/descriptive_button_global"
+            />
+
+        <Button
+            android:id="@+id/HelperMainButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MainButton2"
+            app:layout_constraintStart_toEndOf="@id/HelperMainButton1"
+            app:layout_constraintEnd_toEndOf="@id/MainButton2"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton2"
+            app:layout_constraintTop_toTopOf="@id/HelperMainButton1"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="1"
+            style="@style/helper_button_properties"
+            android:background="@drawable/descriptive_button_global"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BottomButtonLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopButtonLayout" >
+
+        <Button
+            android:id="@+id/MainButton3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/MainButton4"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/MainButton4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@+id/MainButton3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/HelperMainButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MainButton3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton3"
+            app:layout_constraintEnd_toStartOf="@id/HelperMainButton4"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="1"
+            />
+
+        <Button
+            android:id="@+id/HelperMainButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MainButton4"
+            app:layout_constraintStart_toEndOf="@id/HelperMainButton3"
+            app:layout_constraintEnd_toEndOf="@id/MainButton4"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton4"
+            app:layout_constraintTop_toTopOf="@id/HelperMainButton3"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintVertical_weight="1"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

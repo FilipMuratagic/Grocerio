@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Grocerio</string>
+    <string name="MainButton1">New List</string>
+    <string name="MainButton2">My Lists</string>
+    <string name="MainButton3">Recipes</string>
+    <string name="MainButton4">Statistics</string>
+
+    <string name="NewListTextViewFruits">Fruits</string>
+    <string name="NewListTextViewVegetables">Vegetables</string>
+    <string name="NewListTextViewBeverages">Drinks</string>
+    <string name="NewListTextViewDairy">Dairy Products</string>
+    <string name="NewListTextViewMeat">Meat</string>
+    <string name="NewListTextViewAlcohol">Alcoholic Drinks</string>
+    <string name="NewListTextViewSweets">Sweets</string>
+    <string name="NewListTextViewPastry">Pastry</string>
+    <string name="NewListTextViewCosmetics">Cosmetics</string>
+    <string name="NewListTextViewUtilities">Household Utilities</string>
+    <string name="NewListTextViewSnacks">Snacks</string>
+
+    <string name="ListNoAdapter">List #</string>
+    <string name="EmptyListTextView">You have no Lists</string>
+
+    <string name="MyListIconDescription">My List Icon</string>
+
+    <string name="TextViewExtendListItemName">Item Name</string>
+    <string name="TextViewExtendListItemQuantity">Quantity</string>
+    <string name="TextViewMyLists">Existing Lists</string>
+    <string name="TextViewReadList"></string>
+
+    <string name="CreateList">Create List</string>
+    <string name="HintInput">Type amount here.</string>
+    <string name="FABTextView">Press + to add more items.</string>
+
+    <string name="RecipeBreakfast">Breakfast</string>
+    <string name="RecipeLunch">Lunch</string>
+    <string name="RecipeDinner">Dinner</string>
+    <string name="RecipeDessert">Dessert</string>
+
+    <string name="EggsBenedict">Eggs Benedict</string>
+    <string name="Omelette">Omelette</string>
+    <string name="Pancakes">Pancakes</string>
+    <string name="ChickenRice">Chicken &amp; Rice</string>
+    <string name="Goulash">Goulash</string>
+    <string name="KungPao">Kung Pao Chicken</string>
+    <string name="Salmon">Salmon</string>
+    <string name="ShepherdsPie">Shepherds Pie</string>
+    <string name="StuffedPeppers">Stuffed Peppers</string>
+    <string name="Bolognese">Pasta Bolognese</string>
+    <string name="Lasagna">Lasagna</string>
+    <string name="SesameSalad">Sesame Salad</string>
+    <string name="ChocolateCake">Chocolate Cake</string>
+    <string name="CremeBrulee">Creme Brulee</string>
+    <string name="LavaCake">Lava Cake</string>
+
+
+    <string name="apples">APPLES</string>
+    <string name="bananas">BANANAS</string>
+    <string name="oranges">ORANGES</string>
+    <string name="mandarins">MANDARINS</string>
+    <string name="lemons">LEMONS</string>
+    <string name="pineapple">PINEAPPLE</string>
+    <string name="kiwi">KIWI</string>
+    <string name="pears">PEARS</string>
+    <string name="strawberries">STRAWBERRIES</string>
+    <string name="carrots">CARROTS</string>
+    <string name="cabbage">CABBAGE</string>
+    <string name="cauliflower">CAULIFLOWER</string>
+    <string name="potatoes">POTATOES</string>
+    <string name="onions">ONIONS</string>
+    <string name="mushrooms">MUSHROOMS</string>
+    <string name="peppers">PEPPERS</string>
+    <string name="butter">BUTTER</string>
+    <string name="cereal">CEREAL</string>
+    <string name="cheese">CHEESE</string>
+    <string name="eggs">EGGS</string>
+    <string name="coffee">COFFEE</string>
+    <string name="milk">MILK</string>
+    <string name="water">WATER</string>
+    <string name="tea">TEA</string>
+    <string name="wine">WINE</string>
+    <string name="soda">SODA</string>
+    <string name="beef">BEEF</string>
+    <string name="pork">PORK</string>
+    <string name="chicken">CHICKEN</string>
+    <string name="fish">FISH</string>
+    <string name="tuna">TUNA</string>
+    <string name="bread">BREAD</string>
+    <string name="bagel">BAGEL</string>
+    <string name="pasta">PASTA</string>
+</resources>

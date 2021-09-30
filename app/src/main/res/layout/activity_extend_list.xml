@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtendList">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/RecyclerViewMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NewListsTextView"
+            android:paddingStart="7dp"
+            android:paddingEnd="3dp"
+            android:background="@drawable/textview_new_list"
+            android:text="No."
+            android:layout_weight="0.4"/>
+
+        <TextView
+            android:id="@+id/textViewItemsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NewListsTextView"
+            android:background="@drawable/textview_new_list"
+            android:text="@string/TextViewExtendListItemName"
+            android:layout_weight="10"/>
+        <TextView
+            android:id="@+id/textViewItemsQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NewListsTextView"
+            android:background="@drawable/textview_new_list"
+            android:text="@string/TextViewExtendListItemQuantity"
+            android:layout_weight="5"
+
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutDescription"
+        app:layout_constraintBottom_toBottomOf="@+id/CreateListButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/CreateListButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/CreateList"
+        android:textColor="@color/EditTextNumbers"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/RecyclerViewMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/descriptive_button_global"
+
+        
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

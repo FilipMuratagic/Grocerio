@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopButtonLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/MainButton1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@null"
+            android:onClick="onNewListClicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/MainButton2"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize"
+            app:srcCompat="@drawable/new_list_drawable"
+            android:background="#2DF4D3F4"
+            />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/MainButton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@null"
+            android:onClick="onMyListsClicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/MainButton1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize"
+            app:srcCompat="@drawable/my_lists_drawable"
+            android:background="#2DF4D3F4"
+
+            />
+
+        <Button
+            android:id="@+id/HelperMainButton1"
+            style="@style/helper_button_properties"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/descriptive_button_global"
+            android:text="@string/MainButton1"
+            android:onClick="onNewListClicked"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton1"
+            app:layout_constraintEnd_toEndOf="@id/MainButton1"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="@id/MainButton1"
+            app:layout_constraintVertical_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/HelperMainButton2"
+            style="@style/helper_button_properties"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/descriptive_button_global"
+            android:text="@string/MainButton2"
+            android:onClick="onMyListsClicked"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton2"
+            app:layout_constraintEnd_toEndOf="@id/MainButton2"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="@id/MainButton2"
+            app:layout_constraintTop_toTopOf="@id/HelperMainButton1"
+            app:layout_constraintVertical_weight="1"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BottomButtonLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopButtonLayout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/MainButton3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@null"
+            android:onClick="onRecipesClicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/MainButton4"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize"
+            app:srcCompat="@drawable/recipes_image_drawable"
+            android:background="#2DF4D3F4"
+
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/MainButton4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@null"
+            android:onClick="onStatisticsClicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/MainButton3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize"
+            app:srcCompat="@drawable/statistics_image_drawable"
+            android:background="#2DF4D3F4"
+
+            />
+
+        <Button
+            android:id="@+id/HelperMainButton3"
+            style="@style/helper_button_properties"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/descriptive_button_global"
+            android:text="@string/MainButton3"
+            android:onClick="onRecipesClicked"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton3"
+            app:layout_constraintEnd_toEndOf="@id/MainButton3"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="@id/MainButton3"
+            app:layout_constraintVertical_weight="1"
+            />
+
+        <Button
+            android:id="@+id/HelperMainButton4"
+            style="@style/helper_button_properties"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/descriptive_button_global"
+            android:text="@string/MainButton4"
+            android:onClick="onStatisticsClicked"
+            app:layout_constraintBottom_toBottomOf="@id/MainButton4"
+            app:layout_constraintEnd_toEndOf="@id/MainButton4"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="@id/MainButton4"
+            app:layout_constraintTop_toTopOf="@id/HelperMainButton3"
+            app:layout_constraintVertical_weight="1"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+ <!--   <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="TopButtonLayout" />
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="helper_button_properties">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="ShapeAppearanceOverlay.App.CornerSize" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="NewListsTextView">
+        <item name="android:textColor">#ffffff</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="NewListsButtonTextView">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:background">#3B000000</item>
+        <item name="android:shadowRadius">50</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <style name="ListTextStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:shadowRadius">50</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="height">60dp</item>
+    </style>
+
+    <style name="UniversalButtonProperties">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_width">110dp</item>
+<!--        <item name="android:layout_weight">1</item>-->
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <style name="EditTextProperties">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:ems">2</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="backgroundTint">@color/EditTextNumbers</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:hint">@string/HintInput</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item> <!-- new input-->
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">0.001</item> <!-- previous value : 50-->
+    </style>
+
+
+    <style name="FABTextViewProperties">
+
+        <item name="android:topRightRadius">50dp</item>
+        <item name="android:bottomRightRadius">50dp</item>
+<!--        <item name="cornerRadius">6dp</item>-->
+        <item name="background">@color/ButtonGlobalStyle</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="MyListsTextViewStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#131313</item>
+    </style>
+</resources>

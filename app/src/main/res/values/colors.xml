@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00796b</color>
+    <color name="colorPrimaryDark">#004c40</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="ButtonGlobalStyle">#00796b</color>
+    <color name="ButtonGlobalBorderStyle">#48a999</color>
+    <color name="ButtonGlobalRippleStyle">#48a999</color>
+    <color name="NewListTextViewColor">#EE252323</color>
+    <color name="EditTextNumbers">#ffffff</color>
+    <color name="CreateListColor">#DD1CFB03</color>
+    <color name="ListBackgroundStart">#EEECBC40</color>
+    <color name="ListBackgroundCenter">#EDDDA920</color>
+    <color name="ListBackgroundEnd">#EDF3B103</color>
+    <color name="transparent">#0FFFFFFF</color>
+</resources>
